@@ -188,6 +188,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.enrollee_id = enrollee_id
         self.fill_personal_data()
         self.fill_passport_data()
+        self.fill_application_data()
 
     def fill_personal_data(self):
         cur = con.cursor(cursor_factory=psycopg2.extras.DictCursor)
@@ -220,6 +221,18 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.street_line.setText(items['street'])
         self.house_line.setText(items['house'])
         self.flat_line.setText(items['apartments'])
+        cur.close()
+
+    def fill_application_data(self):
+        cur = con.cursor(cursor_factory=psycopg2.extras.DictCursor)
+        cur.execute(f"""SELECT * FROM main.application_forms
+        WHERE student_id={self.enrollee_id}""")
+        items = cur.fetchone()
+        self.certificate_number_line.setText(items['edu_doc_number'])
+        self.form_of_education_cmb.setCurrentText(items['edu_form'])
+        self.field_of_study_cmb.setCurrentText(items['specialization'])
+        self.ind_awards_cmb.setCurrentText(items['ind_awards'])
+        self.orig_or_copy_combobox.setCurrentText(items['is_original'])
         cur.close()
 
 
