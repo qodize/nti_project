@@ -1,0 +1,1513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1054</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Главная</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1061</width>
+      <height>701</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="first_step_tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QWidget" name="formLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>511</width>
+        <height>317</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetNoConstraint</enum>
+       </property>
+       <property name="fieldGrowthPolicy">
+        <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+       </property>
+       <property name="rowWrapPolicy">
+        <enum>QFormLayout::DontWrapRows</enum>
+       </property>
+       <property name="labelAlignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="formAlignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+       </property>
+       <property name="verticalSpacing">
+        <number>7</number>
+       </property>
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <property name="topMargin">
+        <number>3</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Фамилия</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="surname_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Имя</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="first_name_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Отчество</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="father_name_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Пол</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="gender_cmb">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;
+border: 1px solid gray;
+font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Мужской</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Женский</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Боевой вертолет</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>E-mail</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="email_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_7">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Дата рождения</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QDateEdit" name="birth_date">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Телефон</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="phone_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Место рождения  </string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="birthplace_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Общежитие</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QComboBox" name="dormitory_cmb">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;
+border: 1px solid gray;
+font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Нужно</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Не нужно</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_11">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Фото</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QPushButton" name="photo_of_person_btn">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:white;
+border: 1px solid gray;
+font-family: Yu Gothic UI;
+font-size: 14px;</string>
+         </property>
+         <property name="text">
+          <string>Выбрать файл</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: Yu Gothic UI Semibold;
+font-size: 26px;</string>
+      </property>
+      <property name="text">
+       <string>Личные данные
+</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>32</y>
+        <width>201</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>372</y>
+        <width>471</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: Yu Gothic UI Semibold;
+font-size: 26px;</string>
+      </property>
+      <property name="text">
+       <string>Документ, удостоверяющий личность </string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>400</y>
+        <width>471</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>408</y>
+        <width>511</width>
+        <height>212</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_2">
+       <property name="verticalSpacing">
+        <number>7</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_13">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Серия</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_14">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Номер</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_15">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Кем выдан</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_16">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Код подразделения</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_17">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Дата выдачи</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_18">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Фото/скан 
+первой страницы</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QPushButton" name="photo_of_passport_btn">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:white;
+border: 1px solid gray;
+font-family: Yu Gothic UI;
+font-size: 14px;</string>
+         </property>
+         <property name="text">
+          <string>Выбрать файл</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="subdivision_code_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="who_gave_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="pasport_number_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="passport_series_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QDateEdit" name="given_date">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>32</y>
+        <width>241</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>9</y>
+        <width>251</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: Yu Gothic UI Semibold;
+font-size: 26px;</string>
+      </property>
+      <property name="text">
+       <string>Адрес регистрации</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>20</y>
+        <width>10</width>
+        <height>601</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Yu Gothic UI Semilight</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="midLineWidth">
+       <number>2</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>40</y>
+        <width>451</width>
+        <height>155</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_3">
+       <property name="verticalSpacing">
+        <number>7</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_20">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Индекс</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="index_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_21">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Город</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_22">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Улица</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_23">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Дом</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_24">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Квартира</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="city_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="street_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="house_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="flat_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="generate_consent_btn">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>360</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {font-family:Yu Gothic UI ;
+					font-size: 20px;
+					background-color: #FFF44F;
+					border: 1px solid #911E42;
+					border-radius: 5px;
+					color: #911E42;
+					position: relative;
+					box-sizing: border-box;
+					transition: all 700ms ease;}
+
+QPushButton:hover {
+	background: #911E42;
+	color: #FFF44F;
+	box-shadow: inset 0 0 0 3px #b84642;
+}</string>
+      </property>
+      <property name="text">
+       <string>Сформировать согласие на ОПД</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="upload_consent_btn">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>430</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {font-family:Yu Gothic UI ;
+					font-size: 20px;
+					background-color: #FFF44F;
+					border: 1px solid #911E42;
+					border-radius: 5px;
+					color: #911E42;
+					position: relative;
+					box-sizing: border-box;
+					transition: all 700ms ease;}
+
+QPushButton:hover {
+	background: #911E42;
+	color: #FFF44F;
+	box-shadow: inset 0 0 0 3px #b84642;
+}</string>
+      </property>
+      <property name="text">
+       <string>Загрузить согласие в систему</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="save_changes_btn1">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>290</y>
+        <width>341</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {font-family:Yu Gothic UI ;
+					font-size: 20px;
+					background-color: #FFF44F;
+					border: 1px solid #911E42;
+					border-radius: 5px;
+					color: #911E42;
+					position: relative;
+					box-sizing: border-box;
+					transition: all 700ms ease;}
+
+QPushButton:hover {
+	background: #911E42;
+	color: #FFF44F;
+	box-shadow: inset 0 0 0 3px #b84642;
+}</string>
+      </property>
+      <property name="text">
+       <string>Сохранить изменения</string>
+      </property>
+     </widget>
+     <zorder>formLayoutWidget</zorder>
+     <zorder>label</zorder>
+     <zorder>line</zorder>
+     <zorder>line_2</zorder>
+     <zorder>formLayoutWidget_2</zorder>
+     <zorder>line_3</zorder>
+     <zorder>line_4</zorder>
+     <zorder>formLayoutWidget_3</zorder>
+     <zorder>generate_consent_btn</zorder>
+     <zorder>upload_consent_btn</zorder>
+     <zorder>label_12</zorder>
+     <zorder>label_19</zorder>
+     <zorder>save_changes_btn1</zorder>
+    </widget>
+    <widget class="QWidget" name="second_step_tab">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>8</y>
+        <width>451</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: Yu Gothic UI Semibold;
+font-size: 26px;</string>
+      </property>
+      <property name="text">
+       <string>Документ об образовании (аттестат)</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_5">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>30</y>
+        <width>451</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>44</y>
+        <width>661</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_4">
+       <property name="verticalSpacing">
+        <number>7</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_26">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Номер документа</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_27">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Фото/скан титула</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="certificate_number_line">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="certificate_photo_btn">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:white;
+border: 1px solid gray;
+font-family: Yu Gothic UI;
+font-size: 14px;</string>
+         </property>
+         <property name="text">
+          <string>Выбрать файл</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>128</y>
+        <width>661</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: Yu Gothic UI Semibold;
+font-size: 26px;</string>
+      </property>
+      <property name="text">
+       <string>Выбор формы обучения и направления поступления</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_6">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>154</y>
+        <width>661</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>164</y>
+        <width>661</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_5">
+       <property name="verticalSpacing">
+        <number>7</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_29">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Форма обучения</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_30">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Направление</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="form_of_education_cmb">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;
+border: 1px solid gray;
+font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Бюджет</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Платное</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="field_of_study_cmb">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;
+border: 1px solid gray;
+font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>238</y>
+        <width>451</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: Yu Gothic UI Semibold;
+font-size: 26px;</string>
+      </property>
+      <property name="text">
+       <string>Данные экзаменов</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_7">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>270</y>
+        <width>231</width>
+        <height>7</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_8">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>396</y>
+        <width>371</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>369</y>
+        <width>381</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: Yu Gothic UI Semibold;
+font-size: 26px;</string>
+      </property>
+      <property name="text">
+       <string>Индивидуальные достижения</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>404</y>
+        <width>661</width>
+        <height>83</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_6">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_33">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Выбор  </string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="ind_awards_cmb">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;
+border: 1px solid gray;
+font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>ГТО</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Аттестат с отличием (или диплом СПО)</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Всероссийская олимпиада по математике</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Всероссийская олимпиада по профильному предмету</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Предпрофессиональный экзамен</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_34">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Фото/скан документа,
+подтверждающего ИД</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="photo_of_document_ia_btn">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:white;
+border: 1px solid gray;
+font-family: Yu Gothic UI;
+font-size: 14px;</string>
+         </property>
+         <property name="text">
+          <string>Выбрать файл</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>274</y>
+        <width>661</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_7"/>
+     </widget>
+     <widget class="Line" name="line_9">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>530</y>
+        <width>351</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>504</y>
+        <width>361</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: Yu Gothic UI Semibold;
+font-size: 26px;</string>
+      </property>
+      <property name="text">
+       <string>Подаю оригинал или копию</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="formLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>540</y>
+        <width>661</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <layout class="QFormLayout" name="formLayout_8">
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_36">
+         <property name="styleSheet">
+          <string notr="true">QLabel {font-family: Yu Gothic UI Semibold;
+font-size: 19px;}</string>
+         </property>
+         <property name="text">
+          <string>Выбор  </string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="orig_or_copy_combobox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: white;
+border: 1px solid gray;
+font-family: Yu Gothic UI;
+font-size:14px;
+padding-left:6px;</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>Оригинал</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Копию</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="generate_consent_btn_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>600</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {font-family:Yu Gothic UI ;
+					font-size: 20px;
+					background-color: #FFF44F;
+					border: 1px solid #911E42;
+					border-radius: 5px;
+					color: #911E42;
+					position: relative;
+					box-sizing: border-box;
+					transition: all 700ms ease;}
+
+QPushButton:hover {
+	background: #911E42;
+	color: #FFF44F;
+	box-shadow: inset 0 0 0 3px #b84642;
+}</string>
+      </property>
+      <property name="text">
+       <string>Сформировать pdf</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="upload_consent_btn_2">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>600</y>
+        <width>321</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {font-family:Yu Gothic UI ;
+					font-size: 20px;
+					background-color: #FFF44F;
+					border: 1px solid #911E42;
+					border-radius: 5px;
+					color: #911E42;
+					position: relative;
+					box-sizing: border-box;
+					transition: all 700ms ease;}
+
+QPushButton:hover {
+	background: #911E42;
+	color: #FFF44F;
+	box-shadow: inset 0 0 0 3px #b84642;
+}</string>
+      </property>
+      <property name="text">
+       <string>Загрузить pdf в систему</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="save_changes_btn2">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>600</y>
+        <width>291</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {font-family:Yu Gothic UI ;
+					font-size: 20px;
+					background-color: #FFF44F;
+					border: 1px solid #911E42;
+					border-radius: 5px;
+					color: #911E42;
+					position: relative;
+					box-sizing: border-box;
+					transition: all 700ms ease;}
+
+QPushButton:hover {
+	background: #911E42;
+	color: #FFF44F;
+	box-shadow: inset 0 0 0 3px #b84642;
+}</string>
+      </property>
+      <property name="text">
+       <string>Сохранить изменения</string>
+      </property>
+     </widget>
+     <zorder>formLayoutWidget_4</zorder>
+     <zorder>formLayoutWidget_5</zorder>
+     <zorder>label_31</zorder>
+     <zorder>line_8</zorder>
+     <zorder>formLayoutWidget_6</zorder>
+     <zorder>formLayoutWidget_7</zorder>
+     <zorder>formLayoutWidget_8</zorder>
+     <zorder>line_6</zorder>
+     <zorder>line_7</zorder>
+     <zorder>line_9</zorder>
+     <zorder>generate_consent_btn_2</zorder>
+     <zorder>upload_consent_btn_2</zorder>
+     <zorder>label_32</zorder>
+     <zorder>label_28</zorder>
+     <zorder>line_5</zorder>
+     <zorder>label_25</zorder>
+     <zorder>label_35</zorder>
+     <zorder>save_changes_btn2</zorder>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

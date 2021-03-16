@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FirstWindow</class>
+ <widget class="QWidget" name="FirstWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>484</width>
+    <height>286</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="registration_btn">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>70</y>
+     <width>231</width>
+     <height>54</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {font-family:Yu Gothic UI ;
+					font-size: 20px;
+					background-color: #FFF44F;
+					border: 1px solid #911E42;
+					border-radius: 5px;
+					color: #911E42;
+					position: relative;
+					box-sizing: border-box;
+					transition: all 700ms ease;}
+
+QPushButton:hover {
+	background: #911E42;
+	color: #FFF44F;
+	box-shadow: inset 0 0 0 3px #b84642;
+}</string>
+   </property>
+   <property name="text">
+    <string>Регистрация</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="log_in_btn">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>150</y>
+     <width>231</width>
+     <height>54</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {font-family:Yu Gothic UI ;
+					font-size: 20px;
+					background-color: #FFF44F;
+					border: 1px solid #911E42;
+					border-radius: 5px;
+					color: #911E42;
+					position: relative;
+					box-sizing: border-box;
+					transition: all 700ms ease;}
+
+QPushButton:hover {
+	background: #911E42;
+	color: #FFF44F;
+	box-shadow: inset 0 0 0 3px #b84642;
+}</string>
+   </property>
+   <property name="text">
+    <string>Вход</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
